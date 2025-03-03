@@ -1,0 +1,455 @@
+/* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
+
+
+a {
+	font-family: Garamond, serif;
+	font-size: 17pt !important;
+	color: white !important;
+	text-align: center; !important:;
+	font-variant: small-caps !important;
+} /* changed the font in the navigation */
+
+
+
+#mainNav {
+	background-color: #131415 !important;
+} /* changes nvaigation background color */
+
+
+.navbar-nav .nav-item {
+  margin-right: 25px; /* Adjust as needed for more spacing */
+}
+
+.bg-ltgrey{
+	background-color: #D3D3D3;
+	height: 150px;
+} /* for review section */
+
+h4 {
+	text-align: center !important;
+	font-family: serif;
+} /* font for review section */
+
+p {
+	text-align: left !important;
+	font-family: sans-serif;
+  color: white;
+} /* font for review section */
+
+h1, h2 {
+  text-align: center;
+  font-family: Garmond, serif;
+  color: white;
+  font-size: 30pt;
+}
+
+
+.readers-reviews-section h2 {
+    font-family: 'Garamond', serif !important;
+    font-size: 2rem !important;
+    color: white !important;
+    text-transform: uppercase; 
+} /* changes font for readers reviews*/
+
+
+.mt-3, .mb-3 {
+  font-family: sans-serif;
+  font-size: 17px !important; /* Adjust as needed */
+  color: white !important;
+  text-align: center !important;
+}
+
+
+
+.text-center text-light mb-4 {
+  font-family: Garmond, serif !important;
+}
+
+.carousel-item {
+
+    transition: transform 1s linear;
+ } /* allows multi image carousel to move */
+
+
+.black-bg{
+	background-color: #000000;
+	height: 150px;
+} /* for review section */
+
+.header {
+	min-height: 100vh;
+	width: 100%;
+}
+
+
+.reviews{
+	object-fit: fill !important;
+	width: 400;
+	height: 400;
+}
+
+
+/* Change dropdown menu background color */
+  .custom-dropdown {
+    background-color: #131415; /* Match navbar background or any other color */
+  }
+
+  /* Change dropdown text color */
+  .custom-dropdown-item {
+    color: white; /* Custom text color */
+  }
+
+  /* Change hover effects */
+  .custom-dropdown-item:hover {
+    background-color: #540808; /* Slightly darker red background on hover */
+  }
+
+/* Ensure the section spans the full width */
+#reviews {
+  background-color: #D3D3D3; /* Matches the background color of the image's edges */
+  padding: 0; /* Removes padding for a seamless effect */
+  margin: 0; /* Removes margin to prevent gaps */
+}
+
+.jumbotron {
+  background: none; /* Removes default jumbotron background color */
+  margin: 0; /* Prevents margin issues */
+  padding: 0; /* Aligns content flush with edges */
+}
+
+.full-width {
+  width: 100%; /* Ensures the image spans the full width of the section */
+  display: block; /* Removes any unwanted inline spacing */
+}
+
+
+.carousel-item .col-md-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+} /* makes the images in suzanne's work section center */
+
+
+#footer {
+  background-color: ##2d2d2d; /* Matches the background color of the image's edges */
+  padding: 0; /* Removes padding for a seamless effect */
+  margin: 0; /* Removes margin to prevent gaps */
+}
+
+
+
+
+/* Header Carousel Specific Styles */
+.header-carousel .carousel-inner img {
+  height: 100vh; /* Full viewport height for header */
+  object-fit: cover; /* Ensures image covers the carousel area */
+  margin: 0; /* No space above or below */
+  display: block; /* Consistent layout behavior */
+}
+
+.navbar {
+  position: absolute; /* Overlay the carousel */
+  top: 0;
+  z-index: 10; /* Keep navbar above the carousel */
+  width: 100%;
+}
+
+.navbar-brand img {
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); /* Optional: Logo shadow for visibility */
+}
+
+/* Header Carousel */
+#headerCarousel {
+  margin-bottom: 0; /* Remove space below carousel */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+/* General Reset for Margins Between Sections */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 0; /* Ensure no extra space after the header */
+}
+
+
+/* Navbar */
+.navbar {
+  z-index: 10;
+}
+
+/* Ticker Section - rotating text after header carousel*/
+.text-ticker-section {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #131415;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.ticker-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 25s linear infinite;
+  font-size: 14px;
+  color: white;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Text Ticker Adjustments - so carousel and ticker don't go too fast*/
+.text-ticker {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* end of ticker section */
+
+
+/* Works Tabs Section - for hunger games, catching fire, and mockingjay tabs */
+/* Remove gap between sections */
+.works-tabs {
+  background-color: #9A9A9A;
+  padding: 0;
+  margin: 0;
+}
+
+.works-tabs .nav-tabs {
+  justify-content: center;
+  margin-bottom: 20px;
+  border-bottom: none;
+}
+
+.works-tabs .nav-tabs .nav-link {
+  background-color: transparent; /* No background */
+  color: white;
+  border: none;
+  margin: 0 5px;
+  border-radius: 0; /* Remove rounded edges */
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.works-tabs .nav-tabs .nav-link:hover {
+  color: #dddddd;
+}
+
+.works-tabs .nav-tabs .nav-link.active {
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-bottom: 3px solid #540808; /* Underline for the active tab */
+}
+
+.works-tabs .tab-content {
+  background-color: #9A9A9A;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.works-tabs img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+
+
+/* Style the tabs' font */
+.works-tabs .nav-link {
+  font-family: 'Garamond', serif; /* Example font family */
+  font-size: 18px; /* Adjust the font size */
+  color: white; /* Change the font color */
+  text-transform: uppercase; /* Optional: Make the text uppercase */
+  letter-spacing: 1px; /* Optional: Add letter spacing */
+}
+
+
+
+/* end of tabs */
+
+
+
+/* Two Column Section - allows for book image and summary to be side by side */
+.two-column-section {
+  padding: 20px; /* Space around the section */
+  background-color: #9A9A9A; /* Match your theme */
+}
+
+.content-container {
+  display: flex;
+  align-items: flex-start; /* Align content at the top */
+  gap: 20px; /* Space between image and text */
+}
+
+.image-column {
+  flex: 1; /* Make image column take equal space */
+}
+
+.column-image { /* for the hunger games book images on works page */
+  max-width: 90px; /* Image responsive */
+  width: 45%;
+  height: auto;
+}
+
+.text-column {
+  flex: 1; /* Make text column take equal space */
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.text-column h2 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.buy-button-image {
+  display: block;
+  width: 20%;
+  height: auto;
+  margin: 10px auto; /* Center the button below the book image */
+  max-width: 40px; /* Set a reasonable size for the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* end of two columns for book and summary */
+
+/* Readers Reviews Section */
+.readers-reviews-section {
+  background-color: #9A9A9A; /* Matching background color */
+  padding: 3rem 0; /* Space inside the section */
+  margin-top: -2rem; /* Overlap sections slightly to remove white gaps */
+}
+
+.readers-reviews-section h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  color: white; /* Light color for contrast */
+  text-transform: uppercase;
+}
+
+.review-image {
+  max-width: 10%; /* Reduce image size for better spacing */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.row.g-3 {
+  gap: 1rem; /* Reduce space between images */
+}
+
+
+/* movie trailer section - spacing for trailer and info about the movies*/
+/* Adjusting full-width container-fluid styling */
+.video-text-section {
+  background-color: #D9D9D9;
+  padding: 20px 0;
+}
+
+.video-text-section .container-fluid {
+  padding-left: 0; /* Ensure no extra padding */
+  padding-right: 0;
+  width: 100%; /* Enforce full-width layout */
+}
+
+.video-text-section .logo-img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  transition: transform 0.2s ease;
+}
+
+.video-text-section .logo-img:hover {
+  transform: scale(1.1); /* Add subtle hover effect */
+}
+
+.video-text-section .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.video-text-section .col-md-6 {
+  padding: 20px;
+}
+/*end of trailers section */
+
+
+
+
+.suzanne-collins-section {
+    background-color: #9a9a9a;
+    padding: 50px 0;
+  }
+
+.clickable-image {
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+.clickable-image:hover {
+    transform: scale(1.05);
+  }
+
+
+/* for mockingjay tab
+.mockingjay-video-section {
+  background-color: #D9D9D9;
+  padding: 30px 0;
+  margin-top: 50px; /* Keep spacing between sections 
+} -not sure what its doing */
+
+
+.logo-img {
+  max-width: 60px !important; /* Smaller logos */
+  height: 60px !important; /* Explicit height */
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+}
+
+
+.logo-img:hover {
+  transform: scale(1.1); /* Keep zoom effect on logos on mockingjay tab*/
+}
+
+.image-row {
+  margin-top: 15px; /* Keep space between text and logos */
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+
+
+
+
